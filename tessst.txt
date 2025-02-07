@@ -1,2 +1,2 @@
-const API_KEY = "sk_test_1234567890abcdef";
+const API_KEY = "sk_test_12345u67890abcdef";
 export default API_KEY;
