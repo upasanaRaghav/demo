@@ -1,0 +1,15 @@
+
+name: Simple Workflow
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  always-run:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Print a Message
+        run: echo "✅ This workflow runs on every push to main!"
