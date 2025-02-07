@@ -16,7 +16,7 @@ jobs:
       - name: Scan for API Keys or Secrets
         run: |
           echo "Scanning for sensitive data..."
-          if grep -r -E '(api_key|secret|password|token)' .; then
+          if grep -r -i -E '(api_key|secret|password|token)' --exclude-dir={.git,.github} .; then
             echo "🚨 Security Issue Found! Failing the workflow."
             exit 1
           else
